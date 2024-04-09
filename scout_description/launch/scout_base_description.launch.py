@@ -23,7 +23,7 @@ def generate_launch_description():
     ])
 
     return launch.LaunchDescription([
-        DeclareLaunchArgument('use_sim_time', default_value='false',
+        DeclareLaunchArgument('use_sim_time', default_value='true',
             description='Use simulation clock if true'),
 
         launch.actions.LogInfo(msg='use_sim_time: '),
